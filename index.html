@@ -1,96 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>JCell — Assistência Técnica</title>
-  <meta name="description" content="JCell — Assistência técnica de celulares em Guaratinguetá e região. Troca de tela, bateria, conector, câmera, placa e mais. Atendimento rápido com garantia." />
+  <meta name="description"
+    content="JCell — Assistência técnica de celulares em Guaratinguetá e região. Troca de tela, bateria, conector, câmera, placa e mais. Atendimento rápido com garantia." />
   <meta name="theme-color" content="#1F2937" />
 
   <!-- Open Graph / Twitter -->
   <meta property="og:title" content="JCell — Assistência Técnica" />
-  <meta property="og:description" content="Troca de tela, bateria, conector, câmera, placa e mais. Atendimento rápido com garantia." />
+  <meta property="og:description"
+    content="Troca de tela, bateria, conector, câmera, placa e mais. Atendimento rápido com garantia." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://seu-dominio.com/assets/img/fixing.jpg" />
   <meta property="og:url" content="https://seu-dominio.com/" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Favicon -->
   <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
-
-  <!-- Fonte (opcional) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Estilos e ícones -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-  <!-- Dados estruturados (preencha seu endereço/telefone/URL reais) -->
+  <!-- JSON-LD com telefone real -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MobilePhoneStore",
     "name": "JCell — Assistência Técnica",
-    "image": "https://seu-dominio.com/assets/img/jcell-logo.png",
-    "telephone": "+55-12-XXXXXXXXX",
-    "url": "https://seu-dominio.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rua Exemplo, 123",
-      "addressLocality": "Guaratinguetá",
-      "addressRegion": "SP",
-      "postalCode": "12500-000",
-      "addressCountry": "BR"
-    },
-    "areaServed": ["Guaratinguetá","Potim","Roseira"],
-    "priceRange": "$$"
+    "telephone": "+55-12-99719-3679",
+    "url": "https://seu-dominio.com"
   }
   </script>
 </head>
+
 <body>
-
-<header class="main-header">
-  <div class="container">
-    <!-- Logo apenas imagem (não é link) -->
-    <div class="logo">
-      <img src="assets/img/jcell-logo.png" alt="JCell — Assistência Técnica" class="logo-img" />
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/img/jcell-logo.png" alt="JCell — Assistência Técnica" class="logo-img" />
+      </div>
+      <nav class="main-nav" id="site-menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary" href="https://wa.me/5512997193679?text=Oi%2C%20gostaria%20de%20agendar%20um%20reparo"
+        target="_blank" rel="noopener">Agendar Reparo</a>
+      <button class="hamburger-menu" type="button" aria-label="Abrir menu" aria-controls="site-menu"
+        aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
     </div>
-
-    <nav class="main-nav" id="site-menu" aria-label="Navegação principal">
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-
-    <a
-      class="btn btn-primary"
-      href="https://wa.me/55XXXXXXXXXXX?text=Oi%2C%20gostaria%20de%20agendar%20um%20reparo"
-      target="_blank"
-      rel="noopener"
-    >
-      Agendar Reparo
-    </a>
-
-    <button
-      class="hamburger-menu"
-      type="button"
-      aria-label="Abrir menu de navegação"
-      aria-controls="site-menu"
-      aria-expanded="false"
-    >
-      <span class="bar" aria-hidden="true"></span>
-      <span class="bar" aria-hidden="true"></span>
-      <span class="bar" aria-hidden="true"></span>
-    </button>
-  </div>
-</header>
-
+  </header>
 
   <main id="conteudo">
     <!-- HERO -->
@@ -100,121 +66,113 @@
           <h1>Seu celular quebrou?</h1>
           <p>Nós temos a solução com agilidade e garantia.</p>
           <div class="hero-ctas">
-            <a
-              class="btn btn-primary"
-              href="https://wa.me/55XXXXXXXXXXX?text=Oi%2C%20quero%20um%20or%C3%A7amento"
-              target="_blank"
-              rel="noopener"
-            >
-              Orçamento no WhatsApp
-            </a>
+            <a class="btn btn-primary" href="https://wa.me/5512997193679?text=Oi%2C%20quero%20um%20or%C3%A7amento"
+              target="_blank" rel="noopener">Orçamento no WhatsApp</a>
             <a class="btn btn-quote" href="#contato">Falar com a loja</a>
           </div>
         </div>
-
         <div class="hero-media fade-in" aria-hidden="true">
           <img src="assets/img/fixing.jpg" alt="Técnico consertando celular" class="hero-image" />
         </div>
       </div>
     </section>
 
-    <!-- SERVIÇOS + DEPOIMENTOS (mantidos e melhor ancorados) -->
+    <!-- Serviços e depoimentos -->
     <section class="content-section fade-in" id="servicos">
       <div class="container grid-container">
         <div class="services-grid">
           <h2>Nossos Serviços</h2>
           <div class="service-items">
-            <div class="service-item">
-              <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
+            <div class="service-item"><i class="fas fa-mobile-screen-button"></i>
               <h3>Troca de Tela</h3>
-              <p>Reparo e substituição de telas quebradas ou com defeito.</p>
+              <p>Substituição de telas quebradas.</p>
             </div>
-            <div class="service-item">
-              <i class="fas fa-battery-full" aria-hidden="true"></i>
+            <div class="service-item"><i class="fas fa-battery-full"></i>
               <h3>Troca de Bateria</h3>
-              <p>Substituição de baterias com baixo rendimento.</p>
+              <p>Substituição de baterias fracas.</p>
             </div>
-            <div class="service-item">
-              <i class="fas fa-microchip" aria-hidden="true"></i>
+            <div class="service-item"><i class="fas fa-microchip"></i>
               <h3>Reparo de Placa</h3>
-              <p>Conserto de componentes eletrônicos da placa.</p>
+              <p>Conserto de componentes eletrônicos.</p>
             </div>
             <div class="service-item">
-              <i class="fas fa-tint" aria-hidden="true"></i>
-              <h3>Danos por Água</h3>
-              <p>Recuperação de aparelhos danificados por líquido.</p>
+              <i class="fas fa-water"></i>
+              <h3>Oxidação</h3>
+              <p>Tratamento completo contra danos por líquidos.</p>
             </div>
+
             <div class="service-item">
-              <i class="fas fa-camera-rotate" aria-hidden="true"></i>
-              <h3>Reparo de Câmera</h3>
-              <p>Conserto de câmeras frontais e traseiras.</p>
+              <i class="fas fa-volume-up"></i>
+              <h3>Áudio</h3>
+              <p>Reparo de alto-falantes, microfone e fones.</p>
             </div>
+
             <div class="service-item">
-              <i class="fas fa-charging-station" aria-hidden="true"></i>
-              <h3>Conector de Carga</h3>
-              <p>Substituição de conectores de carga danificados.</p>
+              <i class="fas fa-screwdriver"></i>
+              <h3>Outros Reparos</h3>
+              <p>Assistência em placas, câmeras e demais componentes.</p>
             </div>
+
           </div>
         </div>
-
         <div class="testimonials-section">
           <h2>Depoimentos</h2>
-          <div class="testimonial-rotator" aria-live="polite">
+          <div class="testimonial-rotator">
             <div class="testimonial-item active">
-              <p class="testimonial-text">Ótimo atendimento! Trocaram a tela do meu celular no mesmo dia e ficou perfeito.</p>
-              <p class="testimonial-meta"><strong>Mariana Souza</strong> — Guaratinguetá-SP</p>
+              <p>Ótimo atendimento! Trocaram a tela rápido.</p>
+              <p><strong>Mariana</strong></p>
             </div>
             <div class="testimonial-item">
-              <p class="testimonial-text">Resolveram um problema de software que ninguém mais conseguiu. Excelente serviço.</p>
-              <p class="testimonial-meta"><strong>Rafael Lima</strong> — Potim-SP</p>
-            </div>
-            <div class="testimonial-item">
-              <p class="testimonial-text">Preço justo e atendimento rápido. Recomendo muito!</p>
-              <p class="testimonial-meta"><strong>Ana Paula</strong> — Roseira-SP</p>
+              <p>Resolveram software que ninguém conseguiu.</p>
+              <p><strong>Rafael</strong></p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SOBRE -->
+    <!-- Sobre -->
     <section class="content-section fade-in" id="sobre">
       <div class="container">
         <h2>Sobre nós</h2>
-        <p>Somos especializados em assistência técnica de celulares, com equipe experiente e peças de qualidade. Trabalhamos com transparência, laudo claro e garantia nos reparos.</p>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section class="content-section fade-in" id="contato">
-      <div class="container">
-        <h2>Contato</h2>
+        <p>Equipe especializada em assistência técnica de celulares, com transparência e garantia.</p>
         <ul class="contact-list">
           <li>
-            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-            <a href="https://wa.me/55XXXXXXXXXXX?text=Oi%2C%20preciso%20de%20ajuda%20com%20meu%20celular" target="_blank" rel="noopener">WhatsApp</a>
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/5512997193679" target="_blank" rel="noopener">WhatsApp</a>
           </li>
           <li>
-            <i class="fas fa-phone" aria-hidden="true"></i>
-            <a href="tel:+5512XXXXXXXXX">Ligar agora</a>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+5512997193679">Ligar agora</a>
           </li>
           <li>
-            <i class="fas fa-location-dot" aria-hidden="true"></i>
-            <a href="https://maps.google.com/?q=Rua%20Exemplo%2C%20123%2C%20Guaratinguet%C3%A1%20-%20SP" target="_blank" rel="noopener">Como chegar</a>
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/jcell.potim/" target="_blank" rel="noopener">Instagram</a>
+          </li>
+          <li>
+            <i class="fas fa-star"></i>
+            <a href="https://share.google/tJ5PGC0tV3OSyqWXu" target="_blank" rel="noopener">Perfil no Google</a>
           </li>
         </ul>
       </div>
     </section>
+
+
   </main>
 
   <footer class="main-footer fade-in">
     <div class="container footer-grid">
-      <p>© 2025 JCell — Assistência Técnica. Todos os direitos reservados.</p>
-      <p><a href="#inicio">Voltar ao topo</a></p>
+      <p>© <span data-year>2025</span> JCell — Assistência Técnica</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- CTA Flutuante -->
+  <a href="https://wa.me/5512997193679?text=Oi%2C%20vim%20pelo%20site%20e%20quero%20agendar%20um%20reparo"
+    class="fab-btn" target="_blank" rel="noopener" aria-label="Abrir WhatsApp da JCell">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
   <script src="script.js"></script>
 </body>
+
 </html>

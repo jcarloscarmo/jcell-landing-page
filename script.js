@@ -189,11 +189,65 @@
     }
 
     // ---------------------------
-    // Pequena melhoria: adicionar year dinâmico no footer, se existir
+    // Footer year dinâmico
     // ---------------------------
     const yearSpan = qs('[data-year]');
     if (yearSpan) {
       yearSpan.textContent = String(new Date().getFullYear());
+    }
+
+    // ---------------------------
+    // FAB (CTA flutuante) – acessível
+    // ---------------------------
+    const fab = qs('[data-fab]');
+    if (fab) {
+      const btn = fab.querySelector('.fab-btn');
+      const actions = fab.querySelector('.fab-actions');
+
+      const isOpen = () => fab.getAttribute('aria-expanded') === 'true';
+      const open = () => {
+        fab.setAttribute('aria-expanded', 'true');
+        btn.setAttribute('aria-expanded', 'true');
+        // foco no primeiro item quando abrir via teclado
+        const first = actions.querySelector('a,button');
+        if (first && document.activeElement === btn) {
+          first.focus({ preventScroll: true });
+        }
+        document.addEventListener('click', onDocClick);
+        document.addEventListener('keydown', onKeydown);
+      };
+      const close = () => {
+        fab.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-expanded', 'false');
+        document.removeEventListener('click', onDocClick);
+        document.removeEventListener('keydown', onKeydown);
+      };
+      const toggle = () => (isOpen() ? close() : open());
+
+      const onDocClick = (e) => {
+        if (!fab.contains(e.target)) close();
+      };
+      const onKeydown = (e) => {
+        if (e.key === 'Escape') {
+          close();
+          btn.focus({ preventScroll: true });
+        }
+      };
+
+      // estado inicial
+      fab.setAttribute('aria-expanded', 'false');
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggle();
+      });
+
+      // Acessibilidade extra: fecha quando tab sai do menu
+      actions.addEventListener('focusout', (e) => {
+        // se o foco saiu do container e não foi para dentro dele
+        if (!actions.contains(e.relatedTarget)) {
+          close();
+        }
+      });
     }
   });
 })();
